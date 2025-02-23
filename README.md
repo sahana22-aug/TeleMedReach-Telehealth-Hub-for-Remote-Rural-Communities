@@ -2,11 +2,6 @@
 
 A comprehensive description of what this project does and who it's for. This project aims to [insert purpose and goals here].
 
-## Features
-- Feature 1: Description of feature 1.
-- Feature 2: Description of feature 2.
-- Feature 3: Description of feature 3.
-
 ## Table of Contents
 
 1. [Installation](#installation)
