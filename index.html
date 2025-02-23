@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TeleMedReach - Your TeleHealth Hub</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .navbar .dropdown-toggle::after {
+            display: none;
+        }
+        .card {
+            height: 100%;
+        }
+        body {
+            background: linear-gradient(to right, rgb(245, 239, 251), rgb(156, 173, 203));
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-" style="background: linear-gradient(to right, rgb(245, 239, 251), rgb(156, 173, 203));">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="goBack()">
+                <img src="https://ideogram.ai/assets/image/lossless/response/OgmANZZyR3CaO2-22s8F_A" alt="TeleMedReach Logo" width="90" height="90" class="d-inline-block align-text-top" style="border-radius: 30%;">
+            </a>
+            <div class="navbar-nav ms-auto">
+                <select id="language" onchange="changeLanguage()" class="form-select w-auto ms-auto">
+                    <option value="en">English</option>
+                    <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h1 id="title">Welcome to TeleMedReach</h1>
+
+        <p id="description">Connecting you to healthcare solutions for remote and rural communities.</p>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2 id="feature-title">Bridging the Healthcare Gap</h2>
+
+                <p id="feature-description">TeleMedReach is an open-source platform designed to deliver remote healthcare services to underserved communities.</p>
+
+                <a href="http://127.0.0.1:5500/templates/learn_more.html" class="btn btn-primary" id="learn-more" onclick="learnMore()">Learn More</a>
+            </div>
+        </div>
+
+        <h2 class="mt-5" id="key-features">Key Features</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card p-3 shadow">
+                    <h4 id="telehealth">📞 TeleHealth</h4>
+                    <p id="telehealth-desc">Connect with doctors via video, chat, or audio calls.</p>
+                    <br>
+                    <a href="http://127.0.0.1:5500/templates/remote_consultations.html" class="btn btn-primary mt-2" id="health-advice">Health Advice</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-3 shadow">
+                    <h4 id="health-education">📚 Health Education</h4>
+                    <p id="health-education-desc">Access a library of health education resources.</p>
+                    <br>
+                    <a href="http://127.0.0.1:5500/templates/health_education.html" class="btn btn-primary mt-2" id="explore-resources">Explore Resources</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-3 shadow">
+                    <h4 id="health-schemes">🏥 Health Schemes</h4>
+                    <p id="health-schemes-desc">Information on various government health schemes.</p>
+                    <br>
+                    <a href="http://127.0.0.1:5500/templates/gov_health_schemes.html" class="btn btn-primary mt-2" id="explore-schemes">Explore Schemes</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-3 shadow">
+                    <h4 id="latest-news">🆕 HealthCare News</h4>
+                    <p id="latest-news-desc">Stay updated with the latest health news and updates.</p>
+                    <br>
+                    <a href="http://127.0.0.1:5500/templates/latest_health_news.html" class="btn btn-primary mt-2" id="read-more-news">Read More News</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p id="footer-text">© 2025 TeleMedReach | Empowering Healthcare Everywhere</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const translations = {
+            en: {
+                title: "Welcome to TeleHealth Hub",
+                description: "Providing healthcare solutions for remote and rural communities.",
+                "feature-title": "Bridging the Gap in Healthcare",
+                "feature-description": "TeleMedReach is an open-source telehealth platform designed to provide remote healthcare services for remote communities.",
+                "learn-more": "Learn More",
+                "key-features": "Key Features",
+                "telehealth": "📞 TeleHealth",
+                "telehealth-desc": "Connect with doctors via video, chat, or audio calls.",
+                "health-advice": "Health Advice",
+                "health-education": "📚 Health Education",
+                "health-education-desc": "Access a library of health education resources.",
+                "explore-resources": "Explore Resources",
+                "health-schemes": "🏥 Health Schemes",
+                "health-schemes-desc": "Information on various government health schemes.",
+                "explore-schemes": "Explore Schemes",
+                "latest-news": "🆕 Latest Health News",
+                "latest-news-desc": "Stay updated with the latest health news and updates.",
+                "read-more-news": "Read More News",
+                "footer-text": "© 2025 TeleMedReach | Empowering Healthcare Everywhere"
+            },
+            kn: {
+                title: "ಟೆಲಿಹೆಲ್ತ್ ಹಬ್‌ಗೆ ಸ್ವಾಗತ",
+                description: "ದೂರಸ್ಥ ಮತ್ತು ಗ್ರಾಮೀಣ ಸಮುದಾಯಗಳಿಗಾಗಿ ಆರೋಗ್ಯ ಪರಿಹಾರಗಳನ್ನು ಒದಗಿಸುವುದು.",
+                "feature-title": "ಆರೋಗ್ಯದಲ್ಲಿ ಅಂತರವನ್ನು ಪೂರೈಸು",
+                "feature-description": "ಟೆಲೆಮೆಡ್ರೀಚ್ ದೂರಸ್ಥ ಸಮುದಾಯಗಳಿಗೆ ದೂರಸಂಪರ್ಕ ಆರೋಗ್ಯ ಸೇವೆಗಳನ್ನು ಒದಗಿಸಲು ವಿನ್ಯಾಸಗೊಳಿಸಲಾದ ಮುಕ್ತ-ಮೂಲದ ವೇದಿಕೆ.",
+                "learn-more": "ಇನ್ನಷ್ಟು ಕಲಿಯಿರಿ",
+                "key-features": "ಪ್ರಮುಖ ವೈಶಿಷ್ಟ್ಯಗಳು",
+                "telehealth": "📞 ಟೆಲೆಹೆಲ್ತ್",
+                "telehealth-desc": "ವೀಡಿಯೊ, ಚಾಟ್ ಅಥವಾ ಆಡಿಯೊ ಕರೆಗಳ ಮೂಲಕ ವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ.",
+                "health-advice": "ಆರೋಗ್ಯ ಸಲಹೆ",
+                "health-education": "📚 ಆರೋಗ್ಯ ಶಿಕ್ಷಣ",
+                "health-education-desc": "ಆರೋಗ್ಯ ಶಿಕ್ಷಣ ಸಂಪತ್ತಿಗೆ ಪ್ರವೇಶಿಸಿ.",
+                "explore-resources": "ಸಂಪತ್ತು ಅನ್ವೇಷಿಸಿ",
+                "health-schemes": "🏥 ಆರೋಗ್ಯ ಯೋಜನೆಗಳು",
+                "health-schemes-desc": "ವಿವಿಧ ಸರ್ಕಾರ ಆರೋಗ್ಯ ಯೋಜನೆಗಳ ಮಾಹಿತಿ.",
+                "explore-schemes": "ಯೋಜನೆಗಳನ್ನು ಅನ್ವೇಷಿಸಿ",
+                "latest-news": "🆕 ಇತ್ತೀಚಿನ ಆರೋಗ್ಯ ಸುದ್ದಿ",
+                "latest-news-desc": "ಇತ್ತೀಚಿನ ಆರೋಗ್ಯ ಸುದ್ದಿಗಳು ಮತ್ತು ನವೀಕರಣಗಳನ್ನು ತಿಳಿದುಕೊಳ್ಳಿ.",
+                "read-more-news": "ಹೆಚ್ಚಿನ ಸುದ್ದಿಗಳನ್ನು ಓದಿ",
+                "footer-text": "© 2025 TeleMedReach | ಎಲ್ಲೆಡೆ ಆರೋಗ್ಯಕ್ಕೆ ಶಕ್ತಿಕೊಳ್ಪಿಸುವುದು"
+            }
+        };
+        function changeLanguage() {
+            let lang = document.getElementById("language").value;
+            Object.keys(translations[lang]).forEach(id => document.getElementById(id).innerText = translations[lang][id]);
+        }
+
+        function learnMore() {
+            alert("TeleMedReach is an open-source telehealth platform designed to provide remote healthcare services for remote communities. It offers features like TeleHealth consultations, Health Education resources, information on Health Schemes, and the latest Health News.");
+        }
+    </script>
+</body>
+</html>

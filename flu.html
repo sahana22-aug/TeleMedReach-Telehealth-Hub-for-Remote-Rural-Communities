@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flu - TeleMedReach</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        body {
+            background-image: url("https://img.freepik.com/premium-photo/coronaviruses-other-infectious-microbes-orange-pink-color-sit-near-medical-mask-isolated-blue-concept-protection-from-viruses-using-medical-mask_581879-483.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">TeleMedReach</a>
+            <select id="language" onchange="changeLanguage()" class="form-select w-auto ms-auto">
+                <option value="en">English</option>
+                <option value="kn">ಕನ್ನಡ (Kannada)</option>
+            </select>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 id="title" class="text-center mb-4">Flu</h1>
+        <p id="description" class="text-center mb-5">Learn about flu symptoms, vaccines, and treatments.</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-3 shadow">
+                    <h4 id="symptoms-title">Symptoms</h4>
+                    <p id="symptoms-desc">Common symptoms of the flu include:</p>
+                    <ul id="symptoms-list">
+                        <li>Fever</li>
+                        <li>Chills</li>
+                        <li>Muscle aches</li>
+                        <li>Cough</li>
+                        <li>Congestion</li>
+                        <li>Runny nose</li>
+                        <li>Fatigue</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3 shadow">
+                    <h4 id="prevention-title">Prevention</h4>
+                    <p id="prevention-desc">Tips to prevent the flu:</p>
+                    <ul id="prevention-list">
+                        <li>Get an annual flu vaccine</li>
+                        <li>Wash hands frequently with soap and water</li>
+                        <li>Avoid close contact with sick individuals</li>
+                        <li>Disinfect frequently-touched surfaces</li>
+                        <li>Maintain a healthy lifestyle to boost your immune system</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card p-3 shadow">
+                    <h4 id="remedies-title">Home Remedies</h4>
+                    <p id="remedies-desc">Home remedies to alleviate symptoms of the flu:</p>
+                    <ul id="remedies-list">
+                        <li>Stay hydrated by drinking plenty of fluids</li>
+                        <li>Get plenty of rest</li>
+                        <li>Gargle with salt water to soothe a sore throat</li>
+                        <li>Use a humidifier to keep the air moist</li>
+                        <li>Drink warm liquids like tea with honey</li>
+                        <li>Take over-the-counter medications to relieve symptoms</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p id="footer-text">© 2025 TeleMedReach | Empowering Healthcare Everywhere</p>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                title: "Flu",
+                description: "Learn about flu symptoms, vaccines, and treatments.",
+                "symptoms-title": "Symptoms",
+                "symptoms-desc": "Common symptoms of the flu include:",
+                "symptoms-list": ["Fever", "Chills", "Muscle aches", "Cough", "Congestion", "Runny nose", "Fatigue"],
+                "prevention-title": "Prevention",
+                "prevention-desc": "Tips to prevent the flu:",
+                "prevention-list": [
+                    "Get an annual flu vaccine",
+                    "Wash hands frequently with soap and water",
+                    "Avoid close contact with sick individuals",
+                    "Disinfect frequently-touched surfaces",
+                    "Maintain a healthy lifestyle to boost your immune system"
+                ],
+                "remedies-title": "Home Remedies",
+                "remedies-desc": "Home remedies to alleviate symptoms of the flu:",
+                "remedies-list": [
+                    "Stay hydrated by drinking plenty of fluids",
+                    "Get plenty of rest",
+                    "Gargle with salt water to soothe a sore throat",
+                    "Use a humidifier to keep the air moist",
+                    "Drink warm liquids like tea with honey",
+                    "Take over-the-counter medications to relieve symptoms"
+                ],
+                "footer-text": "© 2025 TeleMedReach | Empowering Healthcare Everywhere"
+            },
+            kn: {
+                title: "ಶೀತಜ್ವರ",
+                description: "ಶೀತಜ್ವರ ಲಕ್ಷಣಗಳು, ಲಸಿಕೆಗಳು ಮತ್ತು ಚಿಕಿತ್ಸೆ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ.",
+                "symptoms-title": "ಲಕ್ಷಣಗಳು",
+                "symptoms-desc": "ಶೀತಜ್ವರ ಸಾಮಾನ್ಯ ಲಕ್ಷಣಗಳು:",
+                "symptoms-list": ["ಜ್ವರ", "ಚಳಿಗಟ್ಟುವಿಕೆ", "ಪೆಣೆ ನೋವು", "ಕೆಮ್ಮು", "ನಾಕುಮ್ಮು", "ಒಳಚಿಮುಕು", "ದೌರ್ಬಲ್ಯ"],
+                "prevention-title": "ತಡೆಗಟ್ಟುವಿಕೆ",
+                "prevention-desc": "ಶೀತಜ್ವರ ತಡೆಗಟ್ಟಲು ಟಿಪ್ಸ್:",
+                "prevention-list": [
+                    "ವಾರ್ಷಿಕ ಜ್ವರ ಲಸಿಕೆ ಪಡೆಯಿರಿ",
+                    "ಸಾಬೂನಿನಿಂದ ಕೈತೊಳೆಯಿರಿ",
+                    "ರೋಗಿಗಳ ಸಮೀಪ ಸಂಪರ್ಕ ತಪ್ಪಿಸಿ",
+                    "ಅಡಿಕೆ ಸಾಮಾನ್ಯವಾಗಿ ಬಳಸುವ ತಳಿಗಳನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿ",
+                    "ನಿಮ್ಮ ರೋಗನಿರೋಧಕ ಶಕ್ತಿಯನ್ನು ಉತ್ತೇಜಿಸಲು ಆರೋಗ್ಯಕರ ಜೀವನಶೈಲಿಯನ್ನು ಅನುಸರಿಸಿ"
+                ],
+                "remedies-title": "ಮನೆಮದ್ದುಗಳು",
+                "remedies-desc": "ಶೀತಜ್ವರ ಲಕ್ಷಣಗಳನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಮನೆಮದ್ದುಗಳು:",
+                "remedies-list": [
+                    "ಜಾಸ್ತಿ ತ್ರಾಣದ್ರವ್ಯಗಳನ್ನು ಕುಡಿಯಿರಿ",
+                    "ಸಂಪೂರ್ಣ ವಿಶ್ರಾಂತಿ ಪಡೆಯಿರಿ",
+                    "ನೋವು ಕಡಿಮೆ ಮಾಡಲು ಉಪ್ಪಿನ ನೀರಿನಿಂದ ಒರಳು",
+                    "ಗಾಳಿ ಆರ್ದ್ರವಾಗಿರಲು ಹ್ಯೂಮಿಡಿಫೈಯರ್ ಬಳಸಿ",
+                    "ಚಹಾ ಮತ್ತು ಹನಿ ಜೇನು ಕುಡಿಯಿರಿ",
+                    "ಲಭ್ಯವಿರುವ ಔಷಧಿಗಳನ್ನು ಬಳಸಿ"
+                ],
+                "footer-text": "© 2025 TeleMedReach | ಆರೋಗ್ಯವನ್ನು ಎತ್ತರಕ್ಕೆ ಕೊಂಡೊಯ್ಯುವುದು"
+            }
+        };
+
+        function changeLanguage() {
+            let lang = document.getElementById("language").value;
+            document.querySelectorAll("[id]").forEach(el => {
+                let key = el.id;
+                if (translations[lang][key]) {
+                    if (Array.isArray(translations[lang][key])) {
+                        el.innerHTML = translations[lang][key].map(item => `<li>${item}</li>`).join("");
+                    } else {
+                        el.innerHTML = translations[lang][key];
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

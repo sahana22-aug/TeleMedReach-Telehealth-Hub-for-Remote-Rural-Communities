@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Burns - TeleMedReach</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            margin-bottom: 20px;
+        }
+        .embed-responsive {
+            margin-bottom: 20px;
+        }
+        body {
+            background: linear-gradient(to right,#dbe6f6,#c5796d);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .card{
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">TeleMedReach</a>
+            <select id="language" onchange="changeLanguage()" class="form-select w-auto ms-auto">
+                <option value="en">English</option>
+                <option value="kn">ಕನ್ನಡ(Kannada)</option>
+            </select>
+            <div class="collapse navbar-collapse" id="navbarNav"></div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h1 id="title" class="text-center mb-4">Burns</h1>
+        <p id="subtitle" class="text-center mb-5">Steps to take in case of minor and major burns.</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-3 shadow">
+                    <h4 id="typesTitle">Types of Burns</h4>
+                    <p id="typesDesc">Burns are classified into three types:</p>
+                    <ul>
+                        <li id="firstDegree">First-degree burns: Affect the outer layer of skin (epidermis)</li>
+                        <li id="secondDegree">Second-degree burns: Affect both the outer layer and the underlying layer (dermis)</li>
+                        <li id="thirdDegree">Third-degree burns: Affect the deeper tissues, including muscles and bones</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3 shadow">
+                    <h4 id="treatmentTitle">Treatment</h4>
+                    <p id="treatmentDesc">Steps to treat burns:</p>
+                    <ul>
+                        <li id="coolBurn">Cool the burn with running water for at least 10 minutes</li>
+                        <li id="coverBurn">Cover the burn with a sterile, non-stick bandage</li>
+                        <li id="avoidOintments">Avoid using ice, butter, or ointments on the burn</li>
+                        <li id="painRelievers">Take over-the-counter pain relievers if needed</li>
+                        <li id="seekMedical">Seek medical attention for severe burns</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="videoTitle" class="mt-5 mb-4 text-center">Burn Treatment Video</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="300" height="150" src="https://www.youtube.com/embed/TLr2qsEhpC8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="300" height="150" src="https://www.youtube.com/embed/Dt1oncnrkp4" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="300" height="150" src="https://www.youtube.com/embed/ky-nlHSZjlI" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p id="footerText">&copy; 2025 TeleMedReach | Empowering Healthcare Everywhere</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Language Switcher Script -->
+    <script>
+        const translations = {
+            en: {
+                title: "Burns",
+                subtitle: "Steps to take in case of minor and major burns.",
+                typesTitle: "Types of Burns",
+                typesDesc: "Burns are classified into three types:",
+                firstDegree: "First-degree burns: Affect the outer layer of skin (epidermis)",
+                secondDegree: "Second-degree burns: Affect both the outer layer and the underlying layer (dermis)",
+                thirdDegree: "Third-degree burns: Affect the deeper tissues, including muscles and bones",
+                treatmentTitle: "Treatment",
+                treatmentDesc: "Steps to treat burns:",
+                coolBurn: "Cool the burn with running water for at least 10 minutes",
+                coverBurn: "Cover the burn with a sterile, non-stick bandage",
+                avoidOintments: "Avoid using ice, butter, or ointments on the burn",
+                painRelievers: "Take over-the-counter pain relievers if needed",
+                seekMedical: "Seek medical attention for severe burns",
+                videoTitle: "Burn Treatment Video",
+                footerText: "© 2025 TeleMedReach | Empowering Healthcare Everywhere"
+            },
+            kn: {
+                title: "ಸುಟ್ಟಗಾಯ",
+                subtitle: "ಚಿಕ್ಕ ಮತ್ತು ದೊಡ್ಡ ಸುಟ್ಟ ಗಾಯಗಳ ಸಂದರ್ಭದಲ್ಲಿ ತೆಗೆದುಕೊಳ್ಳಬೇಕಾದ ಹಂತಗಳು.",
+                typesTitle: "ಬಾಳ್ವೆಗಳ ಪ್ರಕಾರಗಳು",
+                typesDesc: "ಬಾಳ್ವೆಗಳು ಮೂರು ಪ್ರಕಾರಗಳಾಗಿ ವಿಂಗಡಿಸಲಾಗಿದೆ:",
+                firstDegree: "ಮೊದಲ ಹಂತದ ಬಾಳ್ವೆಗಳು: ಚರ್ಮದ ಮೇಲ್ಭಾಗವನ್ನು ಮಾತ್ರ ಪ್ರಭಾವಿತಗೊಳಿಸುತ್ತವೆ (ಎಪಿಡರ್ಮಿಸ್)",
+                secondDegree: "ಎರಡನೇ ಹಂತದ ಬಾಳ್ವೆಗಳು: ಚರ್ಮದ ಮೇಲ್ಭಾಗ ಮತ್ತು ಅದರ ಅಡಿಪಾಯವನ್ನು ಪ್ರಭಾವಿತಗೊಳಿಸುತ್ತವೆ (ಡರ್ಮಿಸ್)",
+                thirdDegree: "ಮೂರನೇ ಹಂತದ ಬಾಳ್ವೆಗಳು: ಮಜ್ಜೆ ಮತ್ತು ಎಲುಬುಗಳ ಒಳಗೆ ಹೊಕ್ಕು ಹೋಗುತ್ತವೆ",
+                treatmentTitle: "ಚಿಕಿತ್ಸೆ",
+                treatmentDesc: "ಬಾಳ್ವೆಗಳ ಚಿಕಿತ್ಸಾ ಹಂತಗಳು:",
+                coolBurn: "ಸುಟ್ಟ ಗಾಯವನ್ನು ಕನಿಷ್ಠ 10 ನಿಮಿಷಗಳ ಕಾಲ ನೀರಿನಲ್ಲಿ ತಣ್ಣಗಾಗಿಸಿ",
+                coverBurn: "ಗಾಯವನ್ನು ಶುಚಿಯಾದ, ಅಂಟಿಕೊಳ್ಳದ ಪಟ್ಟಿಯಿಂದ ಮುಚ್ಚಿರಿ",
+                avoidOintments: "ಐಸ್, ಬೆಣ್ಣೆ ಅಥವಾ ಮಲಾಮು ಬಳಸದಿರಿ",
+                painRelievers: "ನೋವು ಕಡಿಮೆ ಮಾಡಲು ಔಷಧಿಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಬಹುದು",
+                seekMedical: "ತೀವ್ರವಾದ ಸುಟ್ಟ ಗಾಯಗಳಿಗಾಗಿ ವೈದ್ಯಕೀಯ ಸಹಾಯ ಪಡೆಯಿರಿ",
+                videoTitle: "ಬಾಳ್ವೆಗಳ ಚಿಕಿತ್ಸಾ ವೀಡಿಯೊ",
+                footerText: "© 2025 TeleMedReach | ಎಲ್ಲೆಡೆ ಆರೋಗ್ಯವನ್ನು ಉತ್ತೇಜಿಸುವುದು"
+            }
+        };
+        function changeLanguage() {
+            let lang = document.getElementById("language").value;
+            Object.keys(translations[lang]).forEach(id => {
+                document.getElementById(id).textContent = translations[lang][id];
+            });
+        }
+    </script>
+</body>
+</html>

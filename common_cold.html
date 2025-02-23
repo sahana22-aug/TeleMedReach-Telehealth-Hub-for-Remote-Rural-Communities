@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Common Cold - TeleMedReach</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            margin-bottom: 20px;
+        }
+        body {
+            background-image: url("https://c7.alamy.com/comp/FCT3KG/abstract-background-with-icons-on-the-medical-theme-FCT3KG.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .card{
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">TeleMedReach</a>
+            <select id="language" onchange="changeLanguage()" class="form-select w-auto ms-auto">
+                <option value="en">English</option>
+                <option value="kn">ಕನ್ನಡ (Kannada)</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h1 id="title" class="text-center mb-4">Common Cold</h1>
+        <p id="description" class="text-center mb-5">Information on symptoms, prevention, and treatment of the common cold.</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-3 shadow">
+                    <h4 id="symptoms-title">Symptoms</h4>
+                    <p id="symptoms-desc">Common symptoms of the common cold include:</p>
+                    <ul id="symptoms-list">
+                        <li>Runny nose</li>
+                        <li>Sore throat</li>
+                        <li>Cough</li>
+                        <li>Congestion</li>
+                        <li>Sneezing</li>
+                        <li>Low-grade fever</li>
+                        <li>Body aches</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3 shadow">
+                    <h4 id="prevention-title">Prevention</h4>
+                    <p id="prevention-desc">Tips to prevent the common cold:</p>
+                    <ul id="prevention-list">
+                        <li>Wash hands frequently with soap and water</li>
+                        <li>Avoid close contact with sick individuals</li>
+                        <li>Disinfect frequently-touched surfaces</li>
+                        <li>Maintain a healthy lifestyle to boost your immune system</li>
+                        <li>Cover your mouth with hankis</li>
+                        <li>Avoid sharing cups, utensils, and personal items</li>
+                        <li>Probiotics can support gut health and immunity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card p-3 shadow">
+                    <h4 id="remedies-title">Home Remedies</h4>
+                    <p id="remedies-desc">Home remedies to alleviate symptoms of the common cold:</p>
+                    <ul id="remedies-list">
+                        <li>Stay hydrated by drinking plenty of fluids</li>
+                        <li>Get plenty of rest</li>
+                        <li>Gargle with salt water to soothe a sore throat</li>
+                        <li>Use a humidifier to keep the air moist</li>
+                        <li>Drink warm liquids like tea with honey</li>
+                        <li>Take over-the-counter medications to relieve symptoms</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p id="footer">© 2025 TeleMedReach | Empowering Healthcare Everywhere</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const translations = {
+            en: {
+                title: "Common Cold",
+                description: "Information on symptoms, prevention, and treatment of the common cold.",
+                "symptoms-title": "Symptoms",
+                "symptoms-desc": "Common symptoms of the common cold include:",
+                "symptoms-list": ["Runny nose", 
+                "Sore throat", 
+                "Cough", 
+                "Congestion", 
+                "Sneezing", 
+                "Low-grade fever", 
+                "Body aches"],
+                "prevention-title": "Prevention",
+                "prevention-desc": "Tips to prevent the common cold:",
+                "prevention-list": ["Wash hands frequently with soap and water", "Avoid close contact with sick individuals", "Disinfect frequently-touched surfaces", "Maintain a healthy lifestyle to boost your immune system", "Cover your mouth with hankis", "Avoid sharing cups, utensils, and personal items", "Probiotics can support gut health and immunity"],
+                "remedies-title": "Home Remedies",
+                "remedies-desc": "Home remedies to alleviate symptoms of the common cold:",
+                "remedies-list": ["Stay hydrated by drinking plenty of fluids", "Get suffient rest", "Gargle with salt water to soothe a sore throat", "Use a humidifier to keep the air moist", "Drink warm liquids like tea with honey", "Take over-the-counter medications to relieve symptoms"],
+                footer: "© 2025 TeleMedReach | Empowering Healthcare Everywhere"
+            },
+            kn: {
+                title: "ಸಾಮಾನ್ಯ ಶೀತ",
+                description: "ಸಾಮಾನ್ಯ ಶೀತದ ಲಕ್ಷಣಗಳು, ತಡೆಗಟ್ಟುವಿಕೆ ಮತ್ತು ಚಿಕಿತ್ಸೆಯ ಮಾಹಿತಿ.",
+                "symptoms-title": "ಲಕ್ಷಣಗಳು",
+                "symptoms-desc": "ಸಾಮಾನ್ಯ ಶೀತದ ಸಾಮಾನ್ಯ ಲಕ್ಷಣಗಳು:",
+                "symptoms-list": ["ಒಳಹರಿವು ಮೂಗು", 
+                "ಕಂಟಿ ನೋವು", 
+                "ಕಫ", 
+                "ನಾಕುಮುರಿ", 
+                "ಸೀನಲು", 
+                "ಕಡಿಮೆ ಶೀತಜ್ವರ", 
+                "ದೇಹ ನೋವು"],
+                "prevention-title": "ತಡೆಗಟ್ಟುವಿಕೆ",
+                "prevention-desc": "ಸಾಮಾನ್ಯ ಶೀತವನ್ನು ತಡೆಯಲು ಸಲಹೆಗಳು:",
+                "prevention-list": ["ಕೈಯನ್ನು ನಿಯಮಿತವಾಗಿ ಸೋಪ್ ಮತ್ತು ನೀರಿನಿಂದ ತೊಳೆಯಿರಿ", "ಆರೋಗ್ಯ ಹಾಳಾಗಿರುವವರೊಂದಿಗೆ ಹತ್ತಿರದ ಸಂಪರ್ಕವನ್ನು ತಪ್ಪಿಸಿ", "ಅನೇಕ ಬಾರಿ ಮುಟ್ಟಿದ ಮೇಲ್ಮೈಗಳನ್ನು ಶುದ್ಧಗೊಳಿಸಿ", "ನಿಮ್ಮ ರೋಗನಿರೋಧಕ ಶಕ್ತಿಯನ್ನು ಹೆಚ್ಚಿಸಲು ಆರೋಗ್ಯಕರ ಜೀವನಶೈಲಿಯನ್ನು ಅನುಸರಿಸಿ", "ಹ್ಯಾಂಕಿಯ ಮೂಲಕ ನಿಮ್ಮ ಬಾಯಿಯನ್ನು ಮುಚ್ಚಿ", "ಗ್ಲಾಸ್, ಪಾತ್ರೆ ಮತ್ತು ವೈಯಕ್ತಿಕ ವಸ್ತುಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಬೇಡಿ", "ಪ್ರೋಬೈಯೋಟಿಕ್ಸ್ ನಿಮ್ಮ ಪಾಚಕ ಆರೋಗ್ಯ ಮತ್ತು ರೋಗನಿರೋಧಕ ಶಕ್ತಿಗೆ ಸಹಾಯ ಮಾಡಬಹುದು"],
+                "remedies-title": "ಗೃಹ ಚಿಕಿತ್ಸೆ",
+                "remedies-desc": "ಸಾಮಾನ್ಯ ಶೀತದ ಲಕ್ಷಣಗಳನ್ನು ಶಮನಗೊಳಿಸಲು ಮನೆಪದ್ಧತಿಗಳು:",
+                footer: "© 2025 TeleMedReach | ಎಲ್ಲೆಡೆ ಆರೋಗ್ಯಸೇವೆ ಸದೃಢಗೊಳಿಸುವಿಕೆ"
+            }
+        };
+
+        function changeLanguage() {
+            const lang = document.getElementById("language").value;
+            Object.keys(translations[lang]).forEach(id => {
+                document.getElementById(id).innerHTML = translations[lang][id];
+            });
+        }
+    </script>
+</body>
+</html>

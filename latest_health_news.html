@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Latest Health News - TeleMedReach</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-" style="background: linear-gradient(to right, rgb(245, 239, 251), rgb(198, 202, 208));">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="goBack()">
+                <img src="https://ideogram.ai/assets/image/lossless/response/OgmANZZyR3CaO2-22s8F_A" width="90" height="90" class="d-inline-block align-text-top" style="border-radius: 30%;">
+            </a>
+
+            <select id="language" onchange="changeLanguage()" class="form-select w-auto ms-auto">
+                <option value="en">English</option>
+                <option value="kn">ಕನ್ನಡ (Kannada)</option>
+            </select>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4" id="title">Latest Health News</h1>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card p-3 shadow mb-4" id="news1">
+                    <h4 id="news1-title">COVID-19 Updates</h4>
+                    <p id="news1-text">Stay informed about the latest COVID-19 updates, including case numbers, vaccination rates, and safety guidelines.</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card p-3 shadow mb-4" id="news2">
+                    <h4 id="news2-title">Vaccine Developments</h4>
+                    <p id="news2-text">Learn about the latest developments in vaccine research and distribution, including new vaccines and booster shots.</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card p-3 shadow mb-4" id="news3">
+                    <h4 id="news3-title">Health Tips</h4>
+                    <p id="news3-text">Get the latest health tips and advice from experts to help you stay healthy and safe.</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card p-3 shadow mb-4" id="news4">
+                    <h4 id="news4-title">Latest Health Video</h4>
+                    <p id="news4-text">Watch the latest health-related video for more insights and updates.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Wi6BpP3GQHc" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card p-3 shadow mb-4" id="news5">
+                    <h4 id="news5-title">Health Newspaper</h4>
+                    <p id="news5-text">Read the latest health newspaper for comprehensive news and articles.</p>
+                    <a href="https://example.com/latest_health_newspaper.pdf" class="btn btn-primary" target="_blank" id="news5-button">Read Newspaper</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p id="footer-text">© 2025 TeleMedReach | Empowering Healthcare Everywhere</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Language Translation Script -->
+    <script>
+        const translations = {
+            en: {
+                title: "Latest Health News",
+                news1Title: "COVID-19 Updates",
+                news1Text: "Stay informed about the latest COVID-19 updates, including case numbers, vaccination rates, and safety guidelines.",
+                news2Title: "Vaccine Developments",
+                news2Text: "Learn about the latest developments in vaccine research and distribution, including new vaccines and booster shots.",
+                news3Title: "Health Tips",
+                news3Text: "Get the latest health tips and advice from experts to help you stay healthy and safe.",
+                news4Title: "Latest Health Video",
+                news4Text: "Watch the latest health-related video for more insights and updates.",
+                news5Title: "Health Newspaper",
+                news5Text: "Read the latest health newspaper for comprehensive news and articles.",
+                news5Button: "Read Newspaper",
+                footerText: "© 2025 TeleMedReach | Empowering Healthcare Everywhere"
+            },
+            kn: {
+                title: "ಇತ್ತೀಚಿನ ಆರೋಗ್ಯ ಸುದ್ದಿಗಳು",
+                news1Title: "ಕೋವಿಡ್-19 ನವೀಕರಣಗಳು",
+                news1Text: "ನಿಮ್ಮನ್ನು ಕೋವಿಡ್-19 ನ ಹೊಸ ಮಾಹಿತಿಗಳು, ಪ್ರಕರಣಗಳ ಸಂಖ್ಯೆ, ಲಸಿಕೆ ಪ್ರಮಾಣಗಳು ಮತ್ತು ಸುರಕ್ಷತಾ ಮಾರ್ಗಸೂಚಿಗಳ ಬಗ್ಗೆ ಮಾಹಿತಿ ಹೊಂದಿರಿಸಿ.",
+                news2Title: "ಲಸಿಕೆ ಅಭಿವೃದ್ಧಿಗಳು",
+                news2Text: "ಹೊಸ ಲಸಿಕೆಗಳು ಮತ್ತು ಬೂಸ್ಟರ್ ಶಾಟ್‌ಗಳೊಂದಿಗೆ ಲಸಿಕೆ ಸಂಶೋಧನೆ ಮತ್ತು ವಿತರಣೆಯಲ್ಲಿ ಇತ್ತೀಚಿನ ಬೆಳವಣಿಗೆಗಳನ್ನು ತಿಳಿಯಿರಿ.",
+                news3Title: "ಆರೋಗ್ಯ ಸಲಹೆಗಳು",
+                news3Text: "ನೀವು ಆರೋಗ್ಯಕರ ಮತ್ತು ಸುರಕ್ಷಿತವಾಗಿರಲು ತಜ್ಞರಿಂದ ಇತ್ತೀಚಿನ ಆರೋಗ್ಯ ಸಲಹೆಗಳನ್ನು ಪಡೆಯಿರಿ.",
+                news4Title: "ಇತ್ತೀಚಿನ ಆರೋಗ್ಯ ವೀಡಿಯೊ",
+                news4Text: "ಹೆಚ್ಚಿನ ವಿವರಗಳು ಮತ್ತು ನವೀಕರಣಗಳಿಗಾಗಿ ಇತ್ತೀಚಿನ ಆರೋಗ್ಯ ಸಂಬಂಧಿತ ವೀಡಿಯೊವನ್ನು ವೀಕ್ಷಿಸಿ.",
+                news5Title: "ಆರೋಗ್ಯ ಪತ್ರಿಕೆ",
+                news5Text: "ಸಂಪೂರ್ಣ ಸುದ್ದಿ ಮತ್ತು ಲೇಖನಗಳಿಗಾಗಿ ಇತ್ತೀಚಿನ ಆರೋಗ್ಯ ಪತ್ರಿಕೆಯನ್ನು ಓದಿ.",
+                news5Button: "ಪತ್ರಿಕೆ ಓದಿ",
+                footerText: "© 2025 TeleMedReach | ಎಲ್ಲೆಡೆ ಆರೋಗ್ಯ ಪರಿಪೋಷಣೆ"
+            }
+        };
+
+        function changeLanguage() {
+            const selectedLang = document.getElementById("language").value;
+            document.getElementById("title").innerText = translations[selectedLang].title;
+            document.getElementById("news1-title").innerText = translations[selectedLang].news1Title;
+            document.getElementById("news1-text").innerText = translations[selectedLang].news1Text;
+            document.getElementById("news2-title").innerText = translations[selectedLang].news2Title;
+            document.getElementById("news2-text").innerText = translations[selectedLang].news2Text;
+            document.getElementById("news3-title").innerText = translations[selectedLang].news3Title;
+            document.getElementById("news3-text").innerText = translations[selectedLang].news3Text;
+            document.getElementById("news4-title").innerText = translations[selectedLang].news4Title;
+            document.getElementById("news4-text").innerText = translations[selectedLang].news4Text;
+            document.getElementById("news5-title").innerText = translations[selectedLang].news5Title;
+            document.getElementById("news5-text").innerText = translations[selectedLang].news5Text;
+            document.getElementById("news5-button").innerText = translations[selectedLang].news5Button;
+            document.getElementById("footer-text").innerText = translations[selectedLang].footerText;
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

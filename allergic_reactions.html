@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Allergic Reactions - TeleMedReach</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">TeleMedReach</a>
+            <select id="language" onchange="changeLanguage()" class="form-select w-auto ms-auto">
+                <option value="en">English</option>
+                <option value="kn">ಕನ್ನಡ (Kannada)</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h1 id="title" class="text-center mb-4">Allergic Reactions</h1>
+        <p id="subtitle" class="text-center mb-5">Learn how to identify and manage allergic reactions effectively.</p>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card p-3 shadow">
+                    <h4 id="identify-title">Identifying Allergic Reactions</h4>
+                    <p id="identify-text">Allergic reactions occur when the immune system reacts to a foreign substance such as pollen, bee venom, pet dander, or certain foods. Symptoms can range from mild to severe and may include hives, itching, swelling, difficulty breathing, and anaphylaxis.</p>
+                </div>
+            </div>
+            <div class="col-md-12 mt-4">
+                <div class="card p-3 shadow">
+                    <h4 id="manage-title">Managing Allergic Reactions</h4>
+                    <p id="manage-text">If you suspect an allergic reaction, it is important to act quickly. For mild reactions, antihistamines may help. For severe reactions, such as anaphylaxis, use an epinephrine auto-injector and seek emergency medical help immediately.</p>
+                </div>
+            </div>
+            <div class="col-md-12 mt-4">
+                <div class="card p-3 shadow">
+                    <h4 id="prevent-title">Prevention of Allergic Reactions</h4>
+                    <p id="prevent-text">To prevent allergic reactions, avoid known allergens, carry emergency medication if prescribed, and wear a medical alert bracelet if you have severe allergies. Regularly consult with a healthcare provider to manage and update your allergy action plan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p id="footer-text">© 2025 TeleMedReach | Empowering Healthcare Everywhere</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const translations = {
+            en: {
+                title: "Allergic Reactions",
+                subtitle: "Learn how to identify and manage allergic reactions effectively.",
+                "identify-title": "Identifying Allergic Reactions",
+                "identify-text": "Allergic reactions occur when the immune system reacts to a foreign substance such as pollen, bee venom, pet dander, or certain foods. Symptoms can range from mild to severe and may include hives, itching, swelling, difficulty breathing, and anaphylaxis.",
+                "manage-title": "Managing Allergic Reactions",
+                "manage-text": "If you suspect an allergic reaction, it is important to act quickly. For mild reactions, antihistamines may help. For severe reactions, such as anaphylaxis, use an epinephrine auto-injector and seek emergency medical help immediately.",
+                "prevent-title": "Prevention of Allergic Reactions",
+                "prevent-text": "To prevent allergic reactions, avoid known allergens, carry emergency medication if prescribed, and wear a medical alert bracelet if you have severe allergies. Regularly consult with a healthcare provider to manage and update your allergy action plan.",
+                "footer-text": "© 2025 TeleMedReach | Empowering Healthcare Everywhere"
+            },
+            kn: {
+                title: "ಅಲರ್ಜಿಕ್ ಪ್ರತಿಕ್ರಿಯೆಗಳು",
+                subtitle: "ಅಲರ್ಜಿಕ್ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ಹೇಗೆ ಗುರುತಿಸಲು ಮತ್ತು ನಿರ್ವಹಿಸಲು ಕಲಿಯಿರಿ.",
+                "identify-title": "ಅಲರ್ಜಿಕ್ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ಗುರುತಿಸುವುದು",
+                "identify-text": "ಅಲರ್ಜಿಕ್ ಪ್ರತಿಕ್ರಿಯೆಗಳು, ಹುಡಿ, ಜೇನುನೊಣ ವಿಷ, ಪಶು ತೊಗಟೆ ಅಥವಾ ಕೆಲವು ಆಹಾರಗಳಂತಹ ವಿದೇಶಿ ಪದಾರ್ಥಗಳಿಗೆ ರೋಗನಿರೋಧಕ ವ್ಯವಸ್ಥೆ ಪ್ರತಿಕ್ರಿಯಿಸುವಾಗ ಸಂಭವಿಸುತ್ತವೆ. ಲಕ್ಷಣಗಳು ತಣ್ಣಗೆ ಇರುವುದು ಅಥವಾ ತೀವ್ರವಾಗಿರಬಹುದು, ಇದರಲ್ಲಿ ಚುಚ್ಚುಮದ್ದು, ಹಗುರಾದ ಉರಿಯೂತ, ಊತ, ಉಸಿರಾಟದ ತೊಂದರೆ ಮತ್ತು ಅನಾಫೈಲಾಕ್ಸಿಸ್ অন্তರಿಸಬಹುದು.",
+                "manage-title": "ಅಲರ್ಜಿಕ್ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ನಿರ್ವಹಿಸುವುದು",
+                "manage-text": "ನೀವು ಅಲರ್ಜಿಕ್ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಅನುಮಾನಿಸಿದರೆ, ವೇಗವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುವುದು ಮುಖ್ಯ. ತಣ್ಣಗಾದ ಪ್ರತಿಕ್ರಿಯೆಗಳಿಗಾಗಿ, ಆಂಟಿಹಿಸ್ಟಮಿನ್ಸ್ ಸಹಾಯ ಮಾಡಬಹುದು. ತೀವ್ರ ಪ್ರತಿಕ್ರಿಯೆಗಳಾದ ಅನಾಫೈಲಾಕ್ಸಿಸ್ ಉಂಟಾದರೆ, ಎಪಿನೆಫ್ರಿನ್ ಸ್ವಾಯತ್ತ-ಇಂಜೆಕ್ಟರ್ ಬಳಸಿರಿ ಮತ್ತು ತುರ್ತು ವೈದ್ಯಕೀಯ ಸಹಾಯವನ್ನು ಕೂಡಲೇ ಹುಡುಕಿರಿ.",
+                "prevent-title": "ಅಲರ್ಜಿಕ್ ಪ್ರತಿಕ್ರಿಯೆಗಳ ತಡೆಯುವುದು",
+                "prevent-text": "ಅಲರ್ಜಿಕ್ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ತಡೆಯಲು, ಪರಿಚಿತ ಅಲರ್ಜನ್‌ಗಳನ್ನು ತಪ್ಪಿಸಿ, ಅಗತ್ಯವಿದ್ದರೆ ತುರ್ತು ಔಷಧಿಯನ್ನು ಕೊಂಡೊಯ್ಯಿರಿ ಮತ್ತು ತೀವ್ರ ಅಲರ್ಜಿಗಳಿದ್ದರೆ ವೈದ್ಯಕೀಯ ಎಚ್ಚರಿಕೆಯ ಬ್ರೆಸ್‌ಲೆಟ್ ಧರಿಸಿ. ನೀವು ನಿಮ್ಮ ಅಲರ್ಜಿಯ ನಿರ್ವಹಣಾ ಯೋಜನೆಯನ್ನು ನವೀಕರಿಸಲು ವೈದ್ಯರನ್ನು ನಿಯಮಿತವಾಗಿ ಸಂಪರ್ಕಿಸಿ.",
+                "footer-text": "© 2025 TeleMedReach | ಎಲ್ಲೆಲ್ಲೂ ಆರೋಗ್ಯ ರಕ್ಷಣೆ"
+            }
+        };
+
+        function changeLanguage() {
+            const selectedLang = document.getElementById("language").value;
+            document.getElementById("title").innerText = translations[selectedLang].title;
+            document.getElementById("subtitle").innerText = translations[selectedLang].subtitle;
+            document.getElementById("identify-title").innerText = translations[selectedLang]["identify-title"];
+            document.getElementById("identify-text").innerText = translations[selectedLang]["identify-text"];
+            document.getElementById("manage-title").innerText = translations[selectedLang]["manage-title"];
+            document.getElementById("manage-text").innerText = translations[selectedLang]["manage-text"];
+            document.getElementById("prevent-title").innerText = translations[selectedLang]["prevent-title"];
+            document.getElementById("prevent-text").innerText = translations[selectedLang]["prevent-text"];
+            document.getElementById("footer-text").innerText = translations[selectedLang]["footer-text"];
+        }
+    </script>
+</body>
+</html>

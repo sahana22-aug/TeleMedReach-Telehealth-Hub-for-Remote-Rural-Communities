@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Health Education Resources - TeleMedReach</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right,#fffbd5,#50a7c2); /* Gradient background */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-" style="background: linear-gradient(to right,#fffbd5,#50a7c2 );">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://ideogram.ai/assets/image/lossless/response/OgmANZZyR3CaO2-22s8F_A" alt="TeleMedReach Logo" width="80" height="80" class="d-inline-block align-text-top" style="border-radius: 30%;">
+            </a>
+            <!-- Removed the collapse functionality -->
+            <div class="navbar-nav ms-auto">
+                <select id="language" onchange="changeLanguage()" class="form-select w-auto ms-auto">
+                    <option value="en">English</option>
+                    <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h1 class="text-center" data-en="Health Education Resources" data-kn="ಆರೋಗ್ಯ ಶಿಕ್ಷಣ ಸಂಪನ್ಮೂಲಗಳು">Health Education Resources</h1>
+        <p class="text-center" data-en="Explore a variety of resources to improve your health knowledge." data-kn="ನಿಮ್ಮ ಆರೋಗ್ಯ ಜ್ಞಾನವನ್ನು ಸುಧಾರಿಸಲು ವಿವಿಧ ಸಂಪನ್ಮೂಲಗಳನ್ನು ಅನ್ವೇಷಿಸಿ.">Explore a variety of resources to improve your health knowledge.</p>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card p-3 shadow h-100">
+                    <h4 data-en="Nutrition and Exercise" data-kn="ಪೋಷಣೆ ಮತ್ತು ವ್ಯಾಯಾಮ">Nutrition and Exercise</h4>
+                    <p data-en="Learn about balanced diets, vitamins, and minerals." data-kn="ಸಮತೋಲಿತ ಆಹಾರ, ವಿಟಮಿನ್ಗಳು ಮತ್ತು ಖನಿಜಗಳ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ.">Learn about balanced diets, vitamins, and minerals.</p>
+                    <a href="http://127.0.0.1:5500/templates/exercise.html" class="btn btn-primary mt-auto" data-en="Read More" data-kn="ಮತ್ತಷ್ಟು ಓದು">Read More</a>
+            </div>
+        </div>
+            <div class="col-md-4">
+                <div class="card p-4 shadow h-100">
+                    <h4 data-en="Mental Health" data-kn="ಮಾನಸಿಕ ಆರೋಗ್ಯ">Mental Health</h4>
+                    <p data-en="Find resources on managing stress and mental well-being." data-kn="ಒತ್ತಡ ಮತ್ತು ಮಾನಸಿಕ ಕಲ್ಯಾಣವನ್ನು ನಿರ್ವಹಿಸುವ ಸಂಪನ್ಮೂಲಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ.">Find resources on managing stress and mental well-being.</p>
+                    <br>
+                    <br>
+                    <a href="http://127.0.0.1:5500/templates/mental_health.html" class="btn btn-primary mt-auto" data-en="Read More" data-kn="ಮತ್ತಷ್ಟು ಓದು">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-5" data-en="General Health Issues" data-kn="ಸಾಮಾನ್ಯ ಆರೋಗ್ಯ ಸಮಸ್ಯೆಗಳು">General Health Issues</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card p-3 shadow h-100">
+                    <h4 data-en="Common Cold" data-kn="ಸಾಮಾನ್ಯ ಶೀತ">Common Cold</h4>
+                    <p data-en="Information on symptoms, prevention, and treatment of the common cold." data-kn="ಸಾಮಾನ್ಯ ಶೀತದ ಲಕ್ಷಣಗಳು, ತಡೆಗಟ್ಟುವಿಕೆ ಮತ್ತು ಚಿಕಿತ್ಸೆ ಬಗ್ಗೆ ಮಾಹಿತಿ.">Information on symptoms, prevention, and treatment of the common cold.</p>
+                    <a href="http://127.0.0.1:5500/templates/common_cold.html" class="btn btn-primary mt-auto" data-en="Read More" data-kn="ಮತ್ತಷ್ಟು ಓದು">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3 shadow h-100">
+                    <h4 data-en="Flu" data-kn="ಜ್ವರ">Flu</h4>
+                    <p data-en="Learn about flu symptoms, transmission, effects, vaccinations, and treatments." data-kn="ಜ್ವರದ ಲಕ್ಷಣಗಳು, ಪ್ರಸರಣ, ಪರಿಣಾಮಗಳು, ಲಸಿಕೆಗಳು ಮತ್ತು ಚಿಕಿತ್ಸೆ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ.">Learn about flu symptoms, transmission, effects, vaccinations, and treatments.</p>
+                    <a href="http://127.0.0.1:5500/templates/flu.html" class="btn btn-primary mt-auto" data-en="Read More" data-kn="ಮತ್ತಷ್ಟು ಓದು">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-5" data-en="First Aid Treatments" data-kn="ಮೊದಲ ಸಹಾಯ ಚಿಕಿತ್ಸೆ">First Aid Treatments</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card p-3 shadow h-100">
+                    <h4 data-en="Burns" data-kn="ಬರ್ನ್ಸ್">Burns</h4>
+                    <p data-en="Steps to take in case of minor and major burns." data-kn="ಸಣ್ಣ ಮತ್ತು ದೊಡ್ಡ ಬರ್ನ್ಸ್ ಸಂದರ್ಭದಲ್ಲಿ ತೆಗೆದುಕೊಳ್ಳುವ ಕ್ರಮಗಳು.">Steps to take in case of minor and major burns.</p>
+                    <a href="http://127.0.0.1:5500/templates/burns.html" class="btn btn-primary mt-auto" data-en="Read More" data-kn="ಮತ್ತಷ್ಟು ಓದು">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3 shadow h-100">
+                    <h4 data-en="Allergic Reactions" data-kn="ಅಲರ್ಜಿಕ್ ಪ್ರತಿಕ್ರಿಯೆಗಳು">Allergic Reactions</h4>
+                    <p data-en="How to identify and manage allergic reactions effectively." data-kn="ಅಲರ್ಜಿಕ್ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ಪರಿಣಾಮಕಾರಿಯಾಗಿ ಗುರುತಿಸುವುದು ಮತ್ತು ನಿರ್ವಹಿಸುವುದು ಹೇಗೆ.">How to identify and manage allergic reactions effectively.</p>
+                    <a href="http://127.0.0.1:5500/templates/allergic_reactions.html" class="btn btn-primary mt-auto" data-en="Read More" data-kn="ಮತ್ತಷ್ಟು ಓದು">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p data-en="© 2023 TeleMedReach | Empowering Healthcare Everywhere" data-kn="© 2023 ಟೆಲೆಮೆಡ್‌ರೀಚ್ | ಎಲ್ಲೆಡೆ ಆರೋಗ್ಯಕ್ಕೆ ಶಕ್ತಿಕೊಳ್ಪಿಸುವುದು">© 2023 TeleMedReach | Empowering Healthcare Everywhere</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const translations = {
+            en: {
+                "Health Education Resources": "Health Education Resources",
+                "Explore a variety of resources to improve your health knowledge.": "Explore a variety of resources to improve your health knowledge.",
+                "Nutrition": "Nutrition",
+                "Learn about balanced diets, vitamins, and minerals.": "Learn about balanced diets, vitamins, and minerals.",
+                "Read More": "Read More",
+                "Exercise": "Exercise",
+                "Discover the benefits of regular physical activity.": "Discover the benefits of regular physical activity.",
+                "Mental Health": "Mental Health",
+                "Find resources on managing stress and mental well-being.": "Find resources on managing stress and mental well-being.",
+                "General Health Issues": "General Health Issues",
+                "Common Cold": "Common Cold",
+                "Information on symptoms, prevention, and treatment of the common cold.": "Information on symptoms, prevention, and treatment of the common cold.",
+                "Flu": "Flu",
+                "Learn about flu symptoms, transmission, effects, vaccinations, and treatments.": "Learn about flu symptoms, transmission, effects, vaccinations, and treatments.",
+                "First Aid Treatments": "First Aid Treatments",
+                "Burns": "Burns",
+                "Steps to take in case of minor and major burns.": "Steps to take in case of minor and major burns.",
+                "Allergic Reactions": "Allergic Reactions",
+                "How to identify and manage allergic reactions effectively.": "How to identify and manage allergic reactions effectively.",
+                "© 2023 TeleMedReach | Empowering Healthcare Everywhere": "© 2023 TeleMedReach | Empowering Healthcare Everywhere"
+            },
+            kn: {
+                "Health Education Resources": "ಆರೋಗ್ಯ ಶಿಕ್ಷಣ ಸಂಪನ್ಮೂಲಗಳು",
+                "Explore a variety of resources to improve your health knowledge.": "ನಿಮ್ಮ ಆರೋಗ್ಯ ಜ್ಞಾನವನ್ನು ಸುಧಾರಿಸಲು ವಿವಿಧ ಸಂಪನ್ಮೂಲಗಳನ್ನು ಅನ್ವೇಷಿಸಿ.",
+                "Nutrition": "ಪೋಷಣಾ",
+                "Learn about balanced diets, vitamins, and minerals.": "ಸಮತೋಲಿತ ಆಹಾರ, ವಿಟಮಿನ್ಗಳು ಮತ್ತು ಖನಿಜಗಳ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ.",
+                "Read More": "ಮತ್ತಷ್ಟು ಓದು",
+                "Exercise": "ವ್ಯಾಯಾಮ",
+                "Discover the benefits of regular physical activity.": "ನಿಯಮಿತ ದೈಹಿಕ ಚಟುವಟಿಕೆಯ ಪ್ರಯೋಜನಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ.",
+                "Mental Health": "ಮಾನಸಿಕ ಆರೋಗ್ಯ",
+                "Find resources on managing stress and mental well-being.": "ಒತ್ತಡ ಮತ್ತು ಮಾನಸಿಕ ಕಲ್ಯಾಣವನ್ನು ನಿರ್ವಹಿಸುವ ಸಂಪನ್ಮೂಲಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ.",
+                "General Health Issues": "ಸಾಮಾನ್ಯ ಆರೋಗ್ಯ ಸಮಸ್ಯೆಗಳು",
+                "Common Cold": "ಸಾಮಾನ್ಯ ಶೀತ",
+                "Information on symptoms, prevention, and treatment of the common cold.": "ಸಾಮಾನ್ಯ ಶೀತದ ಲಕ್ಷಣಗಳು, ತಡೆಗಟ್ಟುವಿಕೆ ಮತ್ತು ಚಿಕಿತ್ಸೆ ಬಗ್ಗೆ ಮಾಹಿತಿ.",
+                "Flu": "ಜ್ವರ",
+                "Learn about flu symptoms, transmission, effects, vaccinations, and treatments.": "ಜ್ವರದ ಲಕ್ಷಣಗಳು, ಪ್ರಸರಣ, ಪರಿಣಾಮಗಳು, ಲಸಿಕೆಗಳು ಮತ್ತು ಚಿಕಿತ್ಸೆ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ.",
+                "First Aid Treatments": "ಮೊದಲ ಸಹಾಯ ಚಿಕಿತ್ಸೆ",
+                "Burns": "ಬರ್ನ್ಸ್",
+                "Steps to take in case of minor and major burns.": "ಸಣ್ಣ ಮತ್ತು ದೊಡ್ಡ ಬರ್ನ್ಸ್ ಸಂದರ್ಭದಲ್ಲಿ ತೆಗೆದುಕೊಳ್ಳುವ ಕ್ರಮಗಳು.",
+                "Allergic Reactions": "ಅಲರ್ಜಿಕ್ ಪ್ರತಿಕ್ರಿಯೆಗಳು",
+                "How to identify and manage allergic reactions effectively.": "ಅಲರ್ಜಿಕ್ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ಪರಿಣಾಮಕಾರಿಯಾಗಿ ಗುರುತಿಸುವುದು ಮತ್ತು ನಿರ್ವಹಿಸುವುದು ಹೇಗೆ.",
+                "© 2023 TeleMedReach | Empowering Healthcare Everywhere": "© 2023 ಟೆಲೆಮೆಡ್‌ರೀಚ್ | ಎಲ್ಲೆಡೆ ಆರೋಗ್ಯಕ್ಕೆ ಶಕ್ತಿಕೊಳ್ಪಿಸುವುದು"
+            }
+        };
+
+        function changeLanguage() {
+            let lang = document.getElementById("language").value;
+            document.querySelectorAll("[data-en]").forEach(element => {
+                element.innerText = translations[lang][element.getAttribute("data-en")];
+            });
+        }
+    </script>
+</body>
+</html>

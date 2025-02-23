@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mental Health - TeleMedReach</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-image: url('https://www.coriell.com/wp-content/uploads/AdobeStock_280995755_Brain-treatment-low-poly-3D-render_NoText.png');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">TeleMedReach</a>
+            <select id="language" onchange="changeLanguage()" class="form-select w-auto ms-auto">
+                <option value="en">English</option>
+                <option value="kn">ಕನ್ನಡ (Kannada)</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h1 id="title" class="text-center mb-4" style="color: white;">Mental Health</h1>
+        <p id="description" class="text-center mb-5" style="color: white;">Find resources on managing stress and mental well-being.</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-3 shadow">
+                    <h4 id="stress-title">Managing Stress</h4>
+                    <p id="stress-desc">Learn techniques to manage stress effectively.</p>
+                    <ul id="stress-list">
+                        <li>Practice mindfulness and meditation</li>
+                        <li>Engage in physical activities</li>
+                        <li>Maintain a healthy diet</li>
+                        <li>Get enough sleep</li>
+                        <li>Connect with friends and family</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3 shadow">
+                    <h4 id="wellbeing-title">Mental Well-being</h4>
+                    <p id="wellbeing-desc">Tips to improve your mental well-being.</p>
+                    <ul id="wellbeing-list">
+                        <li>Set realistic goals</li>
+                        <li>Take breaks and relax</li>
+                        <li>Seek professional help if needed</li>
+                        <li>Stay positive and practice gratitude</li>
+                        <li>Engage in hobbies and activities you enjoy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p id="footer-text">© 2025 TeleMedReach | Empowering Healthcare Everywhere</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        const translations = {
+            en: {
+                title: "Mental Health",
+                description: "Find resources on managing stress and mental well-being.",
+                stressTitle: "Managing Stress",
+                stressDesc: "Learn techniques to manage stress effectively.",
+                stressList: [
+                    "Practice mindfulness and meditation",
+                    "Engage in physical activities",
+                    "Maintain a healthy diet",
+                    "Get enough sleep",
+                    "Connect with friends and family"
+                ],
+                wellbeingTitle: "Mental Well-being",
+                wellbeingDesc: "Tips to improve your mental well-being.",
+                wellbeingList: [
+                    "Set realistic goals",
+                    "Take breaks and relax",
+                    "Seek professional help if needed",
+                    "Stay positive and practice gratitude",
+                    "Engage in hobbies and activities you enjoy"
+                ],
+                footer: "© 2025 TeleMedReach | Empowering Healthcare Everywhere"
+            },
+            kn: {
+                title: "ಮಾನಸಿಕ ಆರೋಗ್ಯ",
+                description: "ಒತ್ತಡವನ್ನು ನಿಭಾಯಿಸುವುದು ಮತ್ತು ಮಾನಸಿಕ ಕ್ಷೇಮವನ್ನು ಸುಧಾರಿಸುವ ಬಗ್ಗೆ ಮಾಹಿತಿ ಪಡೆಯಿರಿ.",
+                stressTitle: "ಒತ್ತಡ ನಿರ್ವಹಣೆ",
+                stressDesc: "ಒತ್ತಡವನ್ನು ಪರಿಣಾಮಕಾರಿಯಾಗಿ ನಿರ್ವಹಿಸುವ ತಂತ್ರಗಳನ್ನು ಕಲಿಯಿರಿ.",
+                stressList: [
+                    "ಮನೋಯೋಗ ಮತ್ತು ಧ್ಯಾನ ಅಭ್ಯಾಸ ಮಾಡಿ",
+                    "ಶಾರೀರಿಕ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ತೊಡಗಿಕೊಳ್ಳಿ",
+                    "ಆರೋಗ್ಯಕರ ಆಹಾರ ಸೇವಿಸಿ",
+                    "ಸಾಕಷ್ಟು ನಿದ್ದೆ ಮಾಡಿ",
+                    "ಮಿತ್ರರು ಮತ್ತು ಕುಟುಂಬದೊಂದಿಗೆ ಸಂಪರ್ಕದಲ್ಲಿರಿ"
+                ],
+                wellbeingTitle: "ಮಾನಸಿಕ ಕ್ಷೇಮ",
+                wellbeingDesc: "ನಿಮ್ಮ ಮಾನಸಿಕ ಕ್ಷೇಮವನ್ನು ಸುಧಾರಿಸುವ ಸಲಹೆಗಳು.",
+                wellbeingList: [
+                    "ವಾಸ್ತವಿಕ ಗುರಿಗಳನ್ನು ಹೊಂದಿ",
+                    "ಬ್ರೇಕ್ ತೆಗೆದುಕೊಳ್ಳಿ ಮತ್ತು ವಿಶ್ರಾಂತಿ ಪಡೆಯಿರಿ",
+                    "ಅಗತ್ಯವಿದ್ದರೆ ವೃತ್ತಿಪರ ಸಹಾಯ ಪಡೆಯಿರಿ",
+                    "ಸಕಾರಾತ್ಮಕವಾಗಿ ಇರಿ ಮತ್ತು ಕೃತಜ್ಞತೆಯನ್ನು ಅಭ್ಯಾಸ ಮಾಡಿ",
+                    "ನೀವು ಆನಂದಿಸುವ ಹವ್ಯಾಸ ಮತ್ತು ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ತೊಡಗಿಕೊಳ್ಳಿ"
+                ],
+                footer: "© 2025 TeleMedReach | ಎಲ್ಲೆಡೆ ಆರೋಗ್ಯ ಸೇವೆಯನ್ನು ಶಕ್ತಿಯುತಗೊಳಿಸುತ್ತಿದೆ"
+            }
+        };
+        
+        function changeLanguage() {
+            const lang = document.getElementById("language").value;
+            document.getElementById("title").innerText = translations[lang].title;
+            document.getElementById("description").innerText = translations[lang].description;
+            document.getElementById("stress-title").innerText = translations[lang].stressTitle;
+            document.getElementById("stress-desc").innerText = translations[lang].stressDesc;
+            document.getElementById("stress-list").innerHTML = translations[lang].stressList.map(item => `<li>${item}</li>`).join('');
+            document.getElementById("wellbeing-title").innerText = translations[lang].wellbeingTitle;
+            document.getElementById("wellbeing-desc").innerText = translations[lang].wellbeingDesc;
+            document.getElementById("wellbeing-list").innerHTML = translations[lang].wellbeingList.map(item => `<li>${item}</li>`).join('');
+            document.getElementById("footer-text").innerText = translations[lang].footer;
+        }
+    </script>
+
+</body>
+</html>

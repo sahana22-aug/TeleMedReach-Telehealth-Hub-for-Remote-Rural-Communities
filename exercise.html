@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nutrition & Exercise - TeleMedReach</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/free-photo/variety-fresh-vegetables-fruits-white-background-flat-lay_169016-23616.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#" id="navbar-brand">TeleMedReach</a>
+            <select id="language" onchange="changeLanguage()" class="form-select w-auto ms-auto">
+                <option value="en">English</option>
+                <option value="kn">ಕನ್ನಡ (Kannada)</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h1 class="text-center" id="main-heading">Nutrition & Exercise</h1>
+        <p class="text-center" id="intro-text">Learn about balanced diets, vitamins, minerals, and the benefits of regular physical activity.</p>
+        
+        <!-- Nutrition Section -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card p-3 shadow">
+                    <h4 id="balanced-diet-heading">Balanced Diet</h4>
+                    <p id="balanced-diet-text">A balanced diet includes a variety of foods in the right proportions to provide the nutrients your body needs.</p>
+                    <ul>
+                        <li id="fruits-veggies">Fruits and vegetables</li>
+                        <li id="whole-grains">Whole grains</li>
+                        <li id="proteins">Proteins (meat, fish, eggs, beans)</li>
+                        <li id="dairy">Dairy products</li>
+                        <li id="fats-oils">Fats and oils</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12 mt-4">
+                <div class="card p-3 shadow">
+                    <h4 id="vitamins-minerals-heading">Vitamins and Minerals</h4>
+                    <p id="vitamins-minerals-text">Vitamins and minerals are essential nutrients that your body needs to function properly.</p>
+                    <ul>
+                        <li id="vitamin-a">Vitamin A: Important for vision and immune function.</li>
+                        <li id="vitamin-c">Vitamin C: Helps with the growth and repair of tissues.</li>
+                        <li id="calcium">Calcium: Essential for strong bones and teeth.</li>
+                        <li id="iron">Iron: Necessary for the production of red blood cells.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise Section -->
+        <h1 class="text-center mt-5 mb-4" id="exercise-heading">Exercise</h1>
+        <p class="text-center mb-5" id="exercise-text">Discover the benefits of regular physical activity.</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-3 shadow">
+                    <h4 id="benefits-exercise-heading">Benefits of Exercise</h4>
+                    <p id="benefits-exercise-text">Regular physical activity can improve your muscle strength and boost your endurance.</p>
+                    <ul>
+                        <li id="cardiovascular-health">Improves cardiovascular health</li>
+                        <li id="weight-management">Helps with weight management</li>
+                        <li id="chronic-diseases">Reduces the risk of chronic diseases</li>
+                        <li id="mental-health">Improves mental health and mood</li>
+                        <li id="strength-bones">Strengthens bones and muscles</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3 shadow">
+                    <h4 id="types-exercise-heading">Types of Exercise</h4>
+                    <p id="types-exercise-text">There are various types of exercises that you can incorporate into your routine.</p>
+                    <ul>
+                        <li id="aerobic-exercise">Aerobic exercises: Running, swimming, cycling</li>
+                        <li id="strength-training">Strength training: Weight lifting, resistance bands</li>
+                        <li id="flexibility-exercise">Flexibility exercises: Yoga, stretching</li>
+                        <li id="balance-exercise">Balance exercises: Tai Chi, balance drills</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-5 mb-4 text-center" id="exercise-videos-heading">Exercise Videos</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/a0FbfHWpAfs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3p8EBPVZ2Iw" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L_xrDAtykMI" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p id="footer-text">© 2025 TeleMedReach | Empowering Healthcare Everywhere</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const content = {
+            en: {
+                "navbar-brand": "TeleMedReach",
+                "main-heading": "Nutrition & Exercise",
+                "intro-text": "Learn about balanced diets, vitamins, minerals, and the benefits of regular physical activity.",
+                "balanced-diet-heading": "Balanced Diet",
+                "balanced-diet-text": "A balanced diet includes a variety of foods in the right proportions to provide the nutrients your body needs.",
+                "fruits-veggies": "Fruits and vegetables",
+                "whole-grains": "Whole grains",
+                "proteins": "Proteins (meat, fish, eggs, beans)",
+                "dairy": "Dairy products",
+                "fats-oils": "Fats and oils",
+                "vitamins-minerals-heading": "Vitamins and Minerals",
+                "vitamins-minerals-text": "Vitamins and minerals are essential nutrients that your body needs to function properly.",
+                "vitamin-a": "Vitamin A: Important for vision and immune function.",
+                "vitamin-c": "Vitamin C: Helps with the growth and repair of tissues.",
+                "calcium": "Calcium: Essential for strong bones and teeth.",
+                "iron": "Iron: Necessary for the production of red blood cells.",
+                "exercise-heading": "Exercise",
+                "exercise-text": "Discover the benefits of regular physical activity.",
+                "benefits-exercise-heading": "Benefits of Exercise",
+                "benefits-exercise-text": "Regular physical activity can improve your muscle strength and boost your endurance.",
+                "cardiovascular-health": "Improves cardiovascular health",
+                "weight-management": "Helps with weight management",
+                "chronic-diseases": "Reduces the risk of chronic diseases",
+                "mental-health": "Improves mental health and mood",
+                "strength-bones": "Strengthens bones and muscles",
+                "types-exercise-heading": "Types of Exercise",
+                "types-exercise-text": "There are various types of exercises that you can incorporate into your routine.",
+                "aerobic-exercise": "Aerobic exercises: Running, swimming, cycling",
+                "strength-training": "Strength training: Weight lifting, resistance bands",
+                "flexibility-exercise": "Flexibility exercises: Yoga, stretching",
+                "balance-exercise": "Balance exercises: Tai Chi, balance drills",
+                "exercise-videos-heading": "Exercise Videos",
+                "footer-text": "© 2025 TeleMedReach | Empowering Healthcare Everywhere"
+            },
+            kn: {
+                "navbar-brand": "ಟೆಲಿಮೆಡ್ ರೀಚ್",
+                "main-heading": "ಪೋಷಣಾ ಮತ್ತು ವ್ಯಾಯಾಮ",
+                "intro-text": "ಸಂತुलಿತ ಆಹಾರ ಪದ್ಧತಿಗಳು, ವಿಟಮಿನ್‌ಗಳು, ಖನಿಜಗಳು ಮತ್ತು ನಿಯಮಿತ ದೈಹಿಕ ಚಟುವಟಿಕೆಯನ್ನು ವಿವರಿಸುತ್ತದೆ.",
+                "balanced-diet-heading": "ಸಂತुलಿತ ಆಹಾರ",
+                "balanced-diet-text": "ಸಂತುಲಿತ ಆಹಾರದಲ್ಲಿ ಬೋನಿಗಳು, ಹಣ್ಣುಗಳು, ತರಕಾರಿಗಳು, ಧಾನ್ಯಗಳು, ಪ್ರೋಟೀನ್ಸ್ ಮತ್ತು ಇತರ ಪೋಷಕಾಂಶಗಳನ್ನು ಸೇರಿಸುತ್ತದೆ.",
+                "fruits-veggies": "ಹಣ್ಣುಗಳು ಮತ್ತು ತರಕಾರಿಗಳು",
+                "whole-grains": "ಪೂರ್ಣ ಅಣುಗಳು",
+                "proteins": "ಪ್ರೋಟೀನ್ (ಮಾಂಸ, ಮೀನು, ಮೊಟ್ಟೆಗಳು, ಶೆಂಗಾ)",
+                "dairy": "ಹಾಲು ಉತ್ಪನ್ನಗಳು",
+                "fats-oils": "ತೈಲಗಳು ಮತ್ತು ಕೊಬ್ಬುಗಳು",
+                "vitamins-minerals-heading": "ವಿಟಮಿನ್‌ಗಳು ಮತ್ತು ಖನಿಜಗಳು",
+                "vitamins-minerals-text": "ವಿಟಮಿನ್‌ಗಳು ಮತ್ತು ಖನಿಜಗಳು ಮುಖ್ಯ ಆಹಾರಾಂಶಗಳು.",
+                "vitamin-a": "ವಿಟಮಿನ್ A: ದೃಷ್ಟಿ ಮತ್ತು ರೋಗ ನಿರೋಧಕ ತಂತ್ರವನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ.",
+                "vitamin-c": "ವಿಟಮಿನ್ C: ದೇಹದ ಭಾಗಗಳನ್ನು ಬೆಳೆದಂತೆ ದುರಸ್ತಿಯನ್ನು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
+                "calcium": "ಕ್ಯಾಲ್ಸಿಯಮ್: ಹೈನು ಹೊತ್ತಿಗಾಗಿ ಪ್ರಮುಖ.",
+                "iron": "ಹಾಳು: ರಕ್ತದ ಕಣಗಳನ್ನು ಉತ್ಪತ್ತಿಸಲು ಮುಖ್ಯ.",
+                "exercise-heading": "ವ್ಯಾಯಾಮ",
+                "exercise-text": "ನಿಯಮಿತ ದೈಹಿಕ ಚಟುವಟಿಕೆಗಳು.",
+                "benefits-exercise-heading": "ವ್ಯಾಯಾಮದ ಪ್ರಯೋಜನಗಳು",
+                "benefits-exercise-text": "ವ್ಯಾಯಾಮದ ಮೂಲಕ ಪೋಷಕಾಂಶಗಳ ಸಾಧ್ಯತೆಗಳನ್ನು ಹೊಂದಿದ ದೈಹಿಕ ಆರೋಗ್ಯ.",
+                "cardiovascular-health": "ಹೃದಯಪಿಣಾ ಬೃಹತ್ ವಾತಾವರಣ.",
+                "weight-management": "ಆಗಾಗ ಹೆಮ್ಮೊನು.",
+                "chronic-diseases": "ವ್ಯರ್ಥ ವೆಲೆಲಿ",
+                "mental-health": "ಮಾನಸಿಕ ಸ್ಥಿತಿಗತಿ",
+                "strength-bones": "ಬೆಲೆಗೆ"
+            }
+        };
+
+        function changeLanguage() {
+            var language = document.getElementById("language").value;
+            var translations = content[language];
+            Object.keys(translations).forEach(function(key) {
+                document.getElementById(key).innerText = translations[key];
+            });
+        }
+    </script>
+</body>
+</html>

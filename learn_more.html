@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learn More - TeleMedReach</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar .dropdown-toggle::after {
+            display: none;
+        }
+        .card {
+            height: 100%;
+        }
+        body {
+            background: linear-gradient(to right, rgb(245, 239, 251), rgb(156, 173, 203));
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-" style="background: linear-gradient(to right, rgb(245, 239, 251), rgb(156, 173, 203));">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="goBack()">
+                <img src="https://ideogram.ai/assets/image/lossless/response/OgmANZZyR3CaO2-22s8F_A" alt="TeleMedReach Logo" width="90" height="90" class="d-inline-block align-text-top" style="border-radius: 30%;">
+            </a>
+            <select id="language" onchange="changeLanguage()" class="form-select w-auto ms-auto">
+                <option value="en">English</option>
+                <option value="kn">ಕನ್ನಡ (Kannada)</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h1 id="title">Learn More About TeleMedReach</h1>
+        <p id="description">TeleMedReach is an open-source telehealth platform designed to provide remote healthcare services for remote communities. It offers the following features:</p>
+        <ul>
+            <li id="telehealth-feature"><strong>TeleHealth:</strong> Connect with doctors via video, chat, or audio calls.</li>
+            <li id="health-education-feature"><strong>Health Education:</strong> Access a library of health education resources.</li>
+            <li id="health-schemes-feature"><strong>Health Schemes:</strong> Information on various government health schemes.</li>
+            <li id="latest-news-feature"><strong>Latest Health News:</strong> Stay updated with the latest health news and updates.</li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p id="footer-text">© 2025 TeleMedReach | Empowering Healthcare Everywhere</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const translations = {
+            en: {
+                title: "Learn More About TeleMedReach",
+                description: "TeleMedReach is an open-source telehealth platform designed to provide remote healthcare services for remote communities. It offers the following features:",
+                "telehealth-feature": "<strong>TeleHealth:</strong> Connect with doctors via video, chat, or audio calls.",
+                "health-education-feature": "<strong>Health Education:</strong> Access a library of health education resources.",
+                "health-schemes-feature": "<strong>Health Schemes:</strong> Information on various government health schemes.",
+                "latest-news-feature": "<strong>Latest Health News:</strong> Stay updated with the latest health news and updates.",
+                "footer-text": "© 2025 TeleMedReach | Empowering Healthcare Everywhere"
+            },
+            kn: {
+                title: "ಟೆಲೆಮೆಡ್‌ರೀಚ್ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ",
+                description: "ಟೆಲೆಮೆಡ್‌ರೀಚ್ ದೂರಸ್ಥ ಸಮುದಾಯಗಳಿಗೆ ದೂರಸಂಪರ್ಕ ಆರೋಗ್ಯ ಸೇವೆಗಳನ್ನು ಒದಗಿಸಲು ವಿನ್ಯಾಸಗೊಳಿಸಲಾದ ಮುಕ್ತ-ಮೂಲದ ವೇದಿಕೆ. ಇದು ಕೆಳಗಿನ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಒದಗಿಸುತ್ತದೆ:",
+                "telehealth-feature": "<strong>ಟೆಲೆಹೆಲ್ತ್:</strong> ವೀಡಿಯೊ, ಚಾಟ್ ಅಥವಾ ಆಡಿಯೊ ಕರೆಗಳ ಮೂಲಕ ವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ.",
+                "health-education-feature": "<strong>ಆರೋಗ್ಯ ಶಿಕ್ಷಣ:</strong> ಆರೋಗ್ಯ ಶಿಕ್ಷಣ ಸಂಪತ್ತಿಗೆ ಪ್ರವೇಶಿಸಿ.",
+                "health-schemes-feature": "<strong>ಆರೋಗ್ಯ ಯೋಜನೆಗಳು:</strong> ವಿವಿಧ ಸರ್ಕಾರ ಆರೋಗ್ಯ ಯೋಜನೆಗಳ ಮಾಹಿತಿ.",
+                "latest-news-feature": "<strong>ಇತ್ತೀಚಿನ ಆರೋಗ್ಯ ಸುದ್ದಿ:</strong> ಇತ್ತೀಚಿನ ಆರೋಗ್ಯ ಸುದ್ದಿಗಳು ಮತ್ತು ನವೀಕರಣಗಳನ್ನು ತಿಳಿದುಕೊಳ್ಳಿ.",
+                "footer-text": "© 2025 ಟೆಲೆಮೆಡ್‌ರೀಚ್ | ಎಲ್ಲೆಡೆ ಆರೋಗ್ಯಕ್ಕೆ ಶಕ್ತಿಕೊಳ್ಪಿಸುವುದು"
+            }
+        };
+
+        function changeLanguage() {
+            const lang = document.getElementById("language").value;
+            Object.keys(translations[lang]).forEach(id => {
+                document.getElementById(id).innerHTML = translations[lang][id];
+            });
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
